@@ -1,0 +1,3 @@
+module JavaProjectsCourse {
+    exports com;
+}
