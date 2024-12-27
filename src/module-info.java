@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module JavaProjectsCourse {
-    exports emailapp
-}
