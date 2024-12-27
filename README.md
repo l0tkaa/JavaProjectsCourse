@@ -1,1 +1,1 @@
-# vigilant-fortnight
+# Java Projects Course
