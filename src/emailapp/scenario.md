@@ -8,5 +8,5 @@ Your application should do the following
 - Have set methods to change the password, set the mailbox capacity, and define an alternate email address
 - Have get methods to display the name, email, and mailbox caapacity
 
-  [EmailApp main](src/emailapp/EmailApp.java)
-  [Email Class](src/emailapp/Email.java)
+  [EmailApp main](/EmailApp.java)
+  [Email Class](/Email.java)
