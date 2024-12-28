@@ -9,7 +9,7 @@ This repository contains code and resources that were originally created by othe
 
 > **Note:** This repository is not intended for public use or redistribution. If you are looking to use the code, please refer to the original sources for proper permissions.
 
-The code and scenarios in this repo is taken from the following course by Tim Short:
+The code and scenarios in this repo are taken from the following course by Tim Short:
 [Practice Java by Building Projects](https://www.udemy.com/course/practice-java-by-building-projects/?couponCode=ST12MT122624)
 
 
