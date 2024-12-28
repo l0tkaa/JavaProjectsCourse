@@ -9,4 +9,4 @@ Your application should do the following
 - Have get methods to display the name, email, and mailbox caapacity
 
   [EmailApp main](src/emailapp/EmailApp.java)
-
+  [Email Class](src/emailapp/Email.java)
