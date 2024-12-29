@@ -19,7 +19,7 @@ public class Student {
 	private String lastName;
 	private int gradeYear;
 	private String studentID; //unique studentID
-	private String courses;
+	private String courses = null;
 	private int tuitionBalance = 0;
 	private static int costOfCourse = 600;
 	private static int id = 1000; //class ID
@@ -47,7 +47,7 @@ public class Student {
 		
 		setStudentID();
 		
-		System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentID);
+		//System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentID);
 		
 	}
 	
@@ -65,24 +65,46 @@ public class Student {
 	
 	public void enroll() {
 		// get inside a loop, user hits 0
-		System.out.println("Enter course to enroll (Q to quit): ");
-		Scanner in = new Scanner(System.in);
-		String course = in.nextLine();
-		if (course != "Q") {
-			courses = courses + "\n" + course;
-			tuitionBalance = tuitionBalance + costOfCourse;
-		}
-		System.out.print("ENROLLED IN: " + courses);
-		System.out.print("TUITION BALANCE: " + tuitionBalance);
+		do {
+			System.out.print("Enter course to enroll (Q to quit): ");
+			Scanner in = new Scanner(System.in);
+			String course = in.nextLine();
+			if (!course.equals("Q")) {
+				courses = courses + "\n" + course;
+				tuitionBalance = tuitionBalance + costOfCourse;
+			}
+			else { 
+				//System.out.println("BREAK");
+				break;} 
+		} while ( 1 != 0);
+		
+		//System.out.println("ENROLLED IN: " + courses);
+		//System.out.println("TUITION BALANCE: " + tuitionBalance);
 	}
 	
 	// View balance
-	
+	public void viewBalance() {
+		System.out.println("Your balance is: $" + tuitionBalance);
+	}
 	
 	// Pay tuition
+	public void payTuition() {
+		System.out.print("Enter your payment: $");
+		Scanner in = new Scanner(System.in);
+		int payment = in.nextInt();
+		tuitionBalance = tuitionBalance - payment;
+		System.out.println("Thank you for your payment of $" + payment);
+		viewBalance();
+	}
 	
 	// Show status
-	
+	public String toString() {
+		return "Name: " + firstName + " " + lastName + 
+				"\nGrade Level: " + gradeYear + 
+				"\nStudent ID " + studentID + 
+				"\nCourses Enrolled: " + courses + 
+				"\nBalance: $" + tuitionBalance;
+	}
 	
 	
 }
